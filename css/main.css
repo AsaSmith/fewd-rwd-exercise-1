@@ -95,6 +95,26 @@ a.active {
   color: #fff; /* white */
 }
 
+.hidden-contact {
+  background: black;
+  color: white;
+  margin: -75px 0 25px 0;
+}
+
+.show-contact {
+  background-color: black;
+  color: white;
+  transition: margin-top  .5s ease-out;
+  display: flex;
+}
+
+/*.show-contact {
+  background-color: black;
+  color: white;
+  display: none;
+}*/
+
+
 /* put logo and navigation side-by-side on larger screens */
 
 @media (min-width: 32em) {
@@ -188,7 +208,7 @@ div#webtech p {
 /*  =========== CSS pattern from http://lea.verou.me/css3patterns/ =========== */
 
 .cross {
-background: 
+background:
 radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent),
 radial-gradient(circle, transparent 20%, slategray 20%, slategray 80%, transparent 80%, transparent) 50px 50px,
 linear-gradient(#A8B1BB 8px, transparent 8px) 0 -4px,

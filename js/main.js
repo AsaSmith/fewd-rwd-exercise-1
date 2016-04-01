@@ -16,3 +16,16 @@ function handler(e) {
 
   e.stopPropagation();
 }
+
+
+var button = document.getElementById("button");
+var contact = document.getElementById("contact-bar");
+
+button.addEventListener("click", a);
+
+function a(){
+  // document.getElementById("hidden").classList.remove("hidden-contact");
+    contact.classList.remove('hidden-contact');
+    contact.classList.add('show-contact');
+}
+// document.querySelector('#container').addEventListener('click', a );
