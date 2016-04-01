@@ -18,14 +18,19 @@ function handler(e) {
 }
 
 
-var button = document.getElementById("button");
+var contactButton = document.querySelector('[href="#button"]');
 var contact = document.getElementById("contact-bar");
 
-button.addEventListener("click", a);
+contactButton.addEventListener("click", a, false);
 
 function a(){
-  // document.getElementById("hidden").classList.remove("hidden-contact");
+   if (contact.classList.contains('hidden-contact')){
     contact.classList.remove('hidden-contact');
     contact.classList.add('show-contact');
+
+  }else {
+    contact.classList.remove('show-contact');
+    contact.classList.add('hidden-contact');
+  }
 }
 // document.querySelector('#container').addEventListener('click', a );

@@ -99,6 +99,7 @@ a.active {
   background: black;
   color: white;
   margin: -75px 0 25px 0;
+  transition: margin-top  .5s ease-out;
 }
 
 .show-contact {
